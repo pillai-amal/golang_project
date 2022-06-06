@@ -32,6 +32,9 @@ func Hellos(names []string) (map[string]string, error) {
 	return messages, nil
 }
 
+//init function is used to intialize the values
+//here a random seed is set
+
 func init() {
 	rand.Seed(time.Now().UnixNano())
 }
