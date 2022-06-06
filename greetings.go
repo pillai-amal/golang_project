@@ -7,6 +7,8 @@ import (
 	"time"
 )
 
+//the fuction to return greeting when a for a single user
+
 func Hello(name string) (string, error) {
 	if name == "" {
 		return "", errors.New("Empty Value")
@@ -14,6 +16,9 @@ func Hello(name string) (string, error) {
 	message := fmt.Sprintf(randomFormat(), name)
 	return message, nil
 }
+
+//since overloading is not  feature og GO using a diffrent
+//function name to return gerreting for multiple users
 
 func Hellos(names []string) (map[string]string, error) {
 	messages := make(map[string]string)
