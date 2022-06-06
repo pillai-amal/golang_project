@@ -1,1 +1,1 @@
-# golang_project
+# Greetings project from Go Documentation
